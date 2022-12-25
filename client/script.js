@@ -7,7 +7,7 @@ const chatContainer = document.querySelector('#chat_container');
 let loadInterval;
 
 function loader(element) {
-  element.   = '';
+  element.textContent = '';
 
   loadInterval = setInterval(() => {
     element.textContent += '.';
@@ -71,7 +71,7 @@ const handleSubmit = async (e) => {
 
   loader(messageDiv);
 
-  const response = await fetch('https://codex-im0y.onrender.com/', {
+  const response = await fetch('https://codex-4ebe.onrender.com/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
